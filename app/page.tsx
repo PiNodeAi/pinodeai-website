@@ -34,12 +34,12 @@ export default function HomePage() {
           >
             <source src="/desktop-video.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-white/70 dark:bg-gray-950/70" />
+          <div className="absolute inset-0 bg-white/10 dark:bg-gray-950/70" />
         </div>
         <div className="container relative z-10 mx-auto px-4">
           <div className="grid items-center gap-12 py-20 md:py-32">
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-              <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+              <h1 className="mb-6 text-4xl font-bold tracking-tight text-white dark:text-white md:text-5xl lg:text-6xl">
                 Transforming Ideas into
                 <span className="block text-primary-600 dark:text-primary-400">
                   Intelligent Solutions
