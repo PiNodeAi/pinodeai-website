@@ -117,8 +117,8 @@ export default function ServicePage({ params }: ServicePageProps) {
               Ready to Get Started?
             </h2>
             <p className="mb-8 mx-auto max-w-2xl text-lg opacity-90">
-              Let's discuss how {service.title} can help your business achieve
-              its goals.
+              Let&apos;s discuss how {service.title} can help your business
+              achieve its goals.
             </p>
             <Link href="/contact">
               <Button size="lg" variant="secondary">

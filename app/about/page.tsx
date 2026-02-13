@@ -78,10 +78,10 @@ export default function AboutPage() {
                   serving clients worldwide.
                 </p>
                 <p>
-                  Over the years, we've helped hundreds of companies navigate
-                  their digital transformation journeys, from startups looking to
-                  build their first product to enterprises modernizing legacy
-                  systems.
+                  Over the years, we&apos;ve helped hundreds of companies
+                  navigate their digital transformation journeys, from startups
+                  looking to build their first product to enterprises
+                  modernizing legacy systems.
                 </p>
                 <p>
                   Our commitment to excellence, innovation, and client success

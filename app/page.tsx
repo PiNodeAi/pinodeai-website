@@ -176,7 +176,7 @@ export default function HomePage() {
               Success Stories
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
-              See how we've helped businesses achieve their goals
+              See how we&apos;ve helped businesses achieve their goals
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -222,7 +222,7 @@ export default function HomePage() {
               What Our Clients Say
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
-              Don't just take our word for it
+              Don&apos;t just take our word for it
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -247,7 +247,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="mb-4 flex-grow italic text-gray-700 dark:text-gray-300">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="flex text-yellow-400">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -317,7 +317,7 @@ export default function HomePage() {
               Ready to Transform Your Business?
             </h2>
             <p className="mb-8 mx-auto max-w-2xl text-lg opacity-90">
-              Let's discuss how we can help you achieve your digital
+              Let&apos;s discuss how we can help you achieve your digital
               transformation goals
             </p>
             <Link href="/contact">

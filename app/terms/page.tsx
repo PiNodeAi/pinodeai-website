@@ -28,16 +28,16 @@ export default function TermsPage() {
           <div className="prose prose-lg mx-auto max-w-3xl dark:prose-invert">
             <h2>Agreement to Terms</h2>
             <p>
-              By accessing and using {companyName}'s website and services, you
-              agree to be bound by these Terms of Service and all applicable laws
-              and regulations.
+              By accessing and using {companyName}&apos;s website and services,
+              you agree to be bound by these Terms of Service and all applicable
+              laws and regulations.
             </p>
 
             <h2>Use License</h2>
             <p>
               Permission is granted to temporarily access the materials on{" "}
-              {companyName}'s website for personal, non-commercial transitory
-              viewing only.
+              {companyName}&apos;s website for personal, non-commercial
+              transitory viewing only.
             </p>
 
             <h2>Services</h2>
@@ -57,8 +57,8 @@ export default function TermsPage() {
             <h2>Limitation of Liability</h2>
             <p>
               In no event shall {companyName} or its suppliers be liable for any
-              damages arising out of the use or inability to use the materials on
-              this website.
+              damages arising out of the use or inability to use the materials
+              on this website.
             </p>
 
             <h2>Revisions</h2>
