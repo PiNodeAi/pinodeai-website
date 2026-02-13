@@ -9,7 +9,8 @@ import {
 } from "@/types";
 
 export const companyName = "PiNodeAI";
-export const companyTagline = "Transforming Ideas into Intelligent Solutions";
+export const companyTagline = "Accelerating eCommerce, Digital Transformation, and Product Engineering";
+export const companyDescription = "We are a global digital consulting organization focused on accelerating eCommerce, digital transformation, and product engineering initiatives. By combining leading platforms such as Shopify Plus, Adobe, and WordPress with advanced technologies including AI, Node.js, Java, and Python, we engineer scalable, enterprise-grade digital solutions that drive measurable business outcomes.";
 
 export const contactInfo = {
     email: "hello@pinodeai.com",
@@ -28,264 +29,135 @@ export const socialLinks = {
 export const services: Service[] = [
     {
         id: "1",
-        title: "AI & Machine Learning Solutions",
-        slug: "ai-machine-learning",
+        title: "Adobe Experience Manager (AEM) Services",
+        slug: "adobe-experience-manager",
         description:
-            "We develop cutting-edge AI and ML solutions that help businesses automate processes, gain insights from data, and create intelligent applications.",
+            "We help enterprises deliver personalized, content-driven digital experiences using Adobe Experience Manager. Our AEM solutions enable faster content delivery, improved personalization, and seamless omnichannel experiences.",
         shortDescription:
-            "Cutting-edge AI and ML solutions for business automation and intelligence.",
-        icon: "Brain",
+            "Personalized, content-driven digital experiences with Adobe Experience Manager.",
+        icon: "Layers",
         benefits: [
-            "Custom AI model development",
-            "Data analytics and insights",
-            "Process automation",
-            "Predictive analytics",
-            "Natural language processing",
+            "AEM Sites & Assets implementation",
+            "Custom component and template development",
+            "AEM Cloud Service migration",
+            "Headless AEM integrations",
+            "Performance, security & scalability optimization",
         ],
         process: [
             {
                 step: 1,
-                title: "Discovery & Analysis",
+                title: "Discovery & Assessment",
                 description:
-                    "We analyze your business needs and data to identify AI opportunities.",
+                    "We analyze your content requirements and digital experience goals to design the optimal AEM solution.",
             },
             {
                 step: 2,
-                title: "Model Development",
+                title: "Implementation & Development",
                 description:
-                    "Our team develops custom AI models tailored to your specific requirements.",
+                    "Our team implements AEM Sites & Assets, develops custom components and templates tailored to your needs.",
             },
             {
                 step: 3,
-                title: "Integration & Testing",
+                title: "Migration & Integration",
                 description:
-                    "We integrate the solution into your existing systems and thoroughly test it.",
+                    "We migrate to AEM Cloud Service and integrate headless architectures for modern digital experiences.",
             },
             {
                 step: 4,
-                title: "Deployment & Support",
+                title: "Optimization & Support",
                 description:
-                    "We deploy the solution and provide ongoing support and optimization.",
+                    "We optimize performance, security, and scalability while providing ongoing support and enhancements.",
             },
         ],
         featured: true,
     },
     {
         id: "2",
-        title: "Cloud Infrastructure & DevOps",
-        slug: "cloud-devops",
+        title: "WordPress Services",
+        slug: "wordpress-services",
         description:
-            "We design and implement scalable cloud infrastructure solutions with modern DevOps practices to ensure reliability and performance.",
+            "We build flexible, secure, and high-performing WordPress solutions tailored to your business goals. From marketing websites to content-rich platforms, our WordPress services ensure scalability and ease of management.",
         shortDescription:
-            "Scalable cloud infrastructure with modern DevOps practices.",
-        icon: "Cloud",
+            "Flexible, secure, and high-performing WordPress solutions for your business.",
+        icon: "Globe",
         benefits: [
-            "Cloud architecture design",
-            "CI/CD pipeline setup",
-            "Container orchestration",
-            "Infrastructure as Code",
-            "24/7 monitoring and support",
+            "Custom WordPress development",
+            "Headless WordPress architectures",
+            "WooCommerce development",
+            "Performance, SEO & security optimization",
+            "Content migration & platform upgrades",
         ],
         process: [
             {
                 step: 1,
-                title: "Architecture Planning",
+                title: "Planning & Design",
                 description:
-                    "We design a cloud architecture that meets your scalability and performance needs.",
+                    "We assess your requirements and design a WordPress solution that aligns with your business objectives.",
             },
             {
                 step: 2,
-                title: "Infrastructure Setup",
+                title: "Development & Customization",
                 description:
-                    "We provision and configure your cloud infrastructure using best practices.",
+                    "Our team builds custom WordPress sites, headless architectures, and WooCommerce stores tailored to your needs.",
             },
             {
                 step: 3,
-                title: "DevOps Implementation",
+                title: "Optimization & Migration",
                 description:
-                    "We set up CI/CD pipelines and automation for seamless deployments.",
+                    "We optimize performance, SEO, and security, and handle content migration and platform upgrades seamlessly.",
             },
             {
                 step: 4,
-                title: "Monitoring & Optimization",
+                title: "Launch & Maintenance",
                 description:
-                    "We implement monitoring and continuously optimize your infrastructure.",
+                    "We launch your WordPress solution and provide ongoing maintenance, updates, and support.",
             },
         ],
         featured: true,
     },
     {
         id: "3",
-        title: "Web & Mobile Development",
-        slug: "web-mobile-development",
+        title: "Shopify & Shopify Plus Services",
+        slug: "shopify-services",
         description:
-            "We build modern, responsive web and mobile applications that deliver exceptional user experiences across all devices.",
+            "We design and develop scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands. Our Shopify solutions are built to convert, scale, and support long-term business growth.",
         shortDescription:
-            "Modern web and mobile applications with exceptional user experiences.",
-        icon: "Smartphone",
+            "Scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands.",
+        icon: "ShoppingCart",
         benefits: [
-            "Responsive web design",
-            "Native and cross-platform mobile apps",
-            "Progressive Web Apps (PWA)",
-            "Performance optimization",
-            "User experience design",
+            "Shopify & Shopify Plus store development",
+            "Custom themes & storefronts",
+            "Headless Shopify implementations",
+            "App integrations & custom development",
+            "Performance optimization & CRO",
         ],
         process: [
             {
                 step: 1,
-                title: "Design & Planning",
+                title: "Strategy & Planning",
                 description:
-                    "We create wireframes and designs based on your requirements and user research.",
+                    "We analyze your commerce goals and design a Shopify strategy that drives growth and conversions.",
             },
             {
                 step: 2,
-                title: "Development",
+                title: "Development & Customization",
                 description:
-                    "Our team builds your application using modern frameworks and best practices.",
+                    "Our team develops custom Shopify stores, themes, storefronts, and headless implementations.",
             },
             {
                 step: 3,
-                title: "Testing & QA",
+                title: "Integration & Optimization",
                 description:
-                    "We thoroughly test your application across devices and browsers.",
+                    "We integrate apps, develop custom solutions, and optimize performance and conversion rates.",
             },
             {
                 step: 4,
-                title: "Launch & Maintenance",
+                title: "Launch & Growth",
                 description:
-                    "We launch your application and provide ongoing maintenance and updates.",
+                    "We launch your Shopify store and provide ongoing support to ensure long-term business growth.",
             },
         ],
         featured: true,
-    },
-    {
-        id: "4",
-        title: "Data Engineering & Analytics",
-        slug: "data-engineering-analytics",
-        description:
-            "We help you collect, process, and analyze data to make informed business decisions and drive growth.",
-        shortDescription:
-            "Data pipelines and analytics solutions for informed decision-making.",
-        icon: "Database",
-        benefits: [
-            "Data pipeline development",
-            "ETL/ELT processes",
-            "Data warehousing",
-            "Business intelligence dashboards",
-            "Real-time analytics",
-        ],
-        process: [
-            {
-                step: 1,
-                title: "Data Assessment",
-                description:
-                    "We analyze your data sources and identify integration opportunities.",
-            },
-            {
-                step: 2,
-                title: "Pipeline Development",
-                description:
-                    "We build robust data pipelines to collect and process your data.",
-            },
-            {
-                step: 3,
-                title: "Analytics Setup",
-                description:
-                    "We create dashboards and analytics tools for data visualization.",
-            },
-            {
-                step: 4,
-                title: "Optimization & Insights",
-                description:
-                    "We continuously optimize pipelines and provide actionable insights.",
-            },
-        ],
-    },
-    {
-        id: "5",
-        title: "Cybersecurity Solutions",
-        slug: "cybersecurity",
-        description:
-            "We provide comprehensive cybersecurity services to protect your digital assets and ensure compliance with industry standards.",
-        shortDescription:
-            "Comprehensive cybersecurity to protect your digital assets.",
-        icon: "Shield",
-        benefits: [
-            "Security audits and assessments",
-            "Threat detection and response",
-            "Compliance management",
-            "Security training",
-            "Incident response planning",
-        ],
-        process: [
-            {
-                step: 1,
-                title: "Security Assessment",
-                description:
-                    "We conduct a comprehensive security audit of your systems.",
-            },
-            {
-                step: 2,
-                title: "Vulnerability Remediation",
-                description:
-                    "We identify and fix security vulnerabilities in your infrastructure.",
-            },
-            {
-                step: 3,
-                title: "Security Implementation",
-                description:
-                    "We implement security measures and monitoring systems.",
-            },
-            {
-                step: 4,
-                title: "Ongoing Monitoring",
-                description:
-                    "We provide continuous monitoring and security updates.",
-            },
-        ],
-    },
-    {
-        id: "6",
-        title: "Digital Transformation Consulting",
-        slug: "digital-transformation",
-        description:
-            "We guide organizations through digital transformation journeys, helping them modernize processes and leverage technology for competitive advantage.",
-        shortDescription:
-            "Strategic guidance for digital transformation and modernization.",
-        icon: "TrendingUp",
-        benefits: [
-            "Digital strategy development",
-            "Process modernization",
-            "Technology roadmap planning",
-            "Change management",
-            "ROI optimization",
-        ],
-        process: [
-            {
-                step: 1,
-                title: "Current State Analysis",
-                description:
-                    "We assess your current processes and technology landscape.",
-            },
-            {
-                step: 2,
-                title: "Strategy Development",
-                description:
-                    "We create a comprehensive digital transformation strategy.",
-            },
-            {
-                step: 3,
-                title: "Implementation Planning",
-                description:
-                    "We develop detailed implementation plans and roadmaps.",
-            },
-            {
-                step: 4,
-                title: "Execution & Support",
-                description:
-                    "We support you through execution and measure success metrics.",
-            },
-        ],
     },
 ];
 
@@ -843,7 +715,7 @@ export const faqs: FAQ[] = [
         id: "1",
         question: "What services does PiNodeAI offer?",
         answer:
-            "PiNodeAI offers a comprehensive range of technology services including AI & Machine Learning Solutions, Cloud Infrastructure & DevOps, Web & Mobile Development, Data Engineering & Analytics, Cybersecurity Solutions, and Digital Transformation Consulting.",
+            "PiNodeAI offers comprehensive digital consulting services including Adobe Experience Manager (AEM) Services, WordPress Services, and Shopify & Shopify Plus Services. We combine leading platforms with advanced technologies to engineer scalable, enterprise-grade digital solutions.",
         category: "general",
     },
     {
@@ -871,7 +743,7 @@ export const faqs: FAQ[] = [
         id: "5",
         question: "What technologies do you specialize in?",
         answer:
-            "We specialize in modern technologies including React, Next.js, Node.js, Python, AWS, Kubernetes, Docker, TensorFlow, and various AI/ML frameworks. We stay current with the latest technology trends.",
+            "We specialize in leading platforms including Shopify Plus, Adobe Experience Manager, and WordPress, combined with advanced technologies such as AI, Node.js, Java, and Python. We engineer scalable, enterprise-grade digital solutions that drive measurable business outcomes.",
         category: "services",
     },
     {
