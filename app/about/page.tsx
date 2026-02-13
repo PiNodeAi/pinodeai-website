@@ -227,7 +227,7 @@ export default function AboutPage() {
               Our Journey
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
-              Key milestones in our company's history
+              Key milestones in our company&apos;s history
             </p>
           </div>
           <div className="relative">
@@ -236,9 +236,8 @@ export default function AboutPage() {
               {milestones.map((milestone, index) => (
                 <div
                   key={milestone.year}
-                  className={`flex items-center gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`flex items-center gap-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   <div className="flex-1 text-right md:w-1/2">
                     {index % 2 === 0 && (
