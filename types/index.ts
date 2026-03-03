@@ -98,6 +98,18 @@ export interface CompanyStats {
   prefix?: string;
 }
 
+export interface Platform {
+  id: string;
+  title: string;
+  icon: string;
+}
+
+export interface SolutionOffering {
+  id: string;
+  title: string;
+  icon: string;
+}
+
 
 
 

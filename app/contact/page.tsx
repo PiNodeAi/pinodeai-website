@@ -121,7 +121,7 @@ export default function ContactPage() {
           </div>
 
           {/* Map Placeholder */}
-          <div className="mt-12">
+          {/* <div className="mt-12">
             <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
               Find Us
             </h2>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                 className="h-full w-full"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </Section>
     </>

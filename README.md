@@ -150,7 +150,7 @@ This project is licensed under the MIT License.
 
 ## Support
 
-For support, email hello@pinodeai.com or visit our website.
+For support, email info@pienodeai.com or visit our website.
 
 
 
