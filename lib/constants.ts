@@ -6,6 +6,8 @@ import {
     Testimonial,
     FAQ,
     CompanyStats,
+    Platform,
+    SolutionOffering,
 } from "@/types";
 
 export const companyName = "PiNodeAI";
@@ -13,10 +15,10 @@ export const companyTagline = "Accelerating eCommerce, Digital Transformation, a
 export const companyDescription = "We are a global digital consulting organization focused on accelerating eCommerce, digital transformation, and product engineering initiatives. By combining leading platforms such as Shopify Plus, Adobe, and WordPress with advanced technologies including AI, Node.js, Java, and Python, we engineer scalable, enterprise-grade digital solutions that drive measurable business outcomes.";
 
 export const contactInfo = {
-    email: "hello@pinodeai.com",
-    phone: "+1 (555) 123-4567",
-    address: "123 Innovation Drive, Tech City, TC 12345",
-    officeHours: "Monday - Friday: 9:00 AM - 6:00 PM EST",
+    email: "info@pienodeai.com",
+    phone: "+91 8299273710",
+    address: "U-44 Phase-3 Gurugram, Haryana, India",
+    officeHours: "Monday - Friday: 9:00 AM - 6:00 PM IST",
 };
 
 export const socialLinks = {
@@ -26,9 +28,73 @@ export const socialLinks = {
     facebook: "https://facebook.com/pinodeai",
 };
 
+export const platforms: Platform[] = [
+    { id: "1", title: "Enterprise Solution", icon: "Layers" },
+    { id: "2", title: "Artificial Intelligence", icon: "Brain" },
+    { id: "3", title: "Mobile Development", icon: "Smartphone" },
+    { id: "4", title: "Website Development", icon: "Globe" },
+];
+
+export const solutionOfferings: SolutionOffering[] = [
+    { id: "1", title: "AI/ML Powered Analytics", icon: "BarChart3" },
+    { id: "2", title: "Digital Transformation", icon: "RefreshCw" },
+    { id: "3", title: "Data Migration & Automation", icon: "Database" },
+    { id: "4", title: "Data Engineering", icon: "Cpu" },
+    { id: "5", title: "Point Of Sale", icon: "CreditCard" },
+    { id: "6", title: "Blockchain", icon: "Link2" },
+    { id: "7", title: "ERP & ECM", icon: "FileStack" },
+    { id: "8", title: "Quality Assurance", icon: "CheckCircle" },
+    { id: "9", title: "3D/AR/VR", icon: "Box" },
+    { id: "10", title: "DEVOPS & Cloud Consulting", icon: "Cloud" },
+];
+
 export const services: Service[] = [
     {
         id: "1",
+        title: "Shopify & Shopify Plus Services",
+        slug: "shopify-services",
+        description:
+            "We design and develop scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands. Our Shopify solutions are built to convert, scale, and support long-term business growth.",
+        shortDescription:
+            "Scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands.",
+        icon: "ShoppingCart",
+        benefits: [
+            "Shopify & Shopify Plus store development",
+            "Custom themes & storefronts",
+            "Headless Shopify implementations",
+            "App integrations & custom development",
+            "Performance optimization & CRO",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Strategy & Planning",
+                description:
+                    "We analyze your commerce goals and design a Shopify strategy that drives growth and conversions.",
+            },
+            {
+                step: 2,
+                title: "Development & Customization",
+                description:
+                    "Our team develops custom Shopify stores, themes, storefronts, and headless implementations.",
+            },
+            {
+                step: 3,
+                title: "Integration & Optimization",
+                description:
+                    "We integrate apps, develop custom solutions, and optimize performance and conversion rates.",
+            },
+            {
+                step: 4,
+                title: "Launch & Growth",
+                description:
+                    "We launch your Shopify store and provide ongoing support to ensure long-term business growth.",
+            },
+        ],
+        featured: true,
+    },
+    {
+        id: "2",
         title: "Adobe Experience Manager (AEM) Services",
         slug: "adobe-experience-manager",
         description:
@@ -72,7 +138,7 @@ export const services: Service[] = [
         featured: true,
     },
     {
-        id: "2",
+        id: "3",
         title: "WordPress Services",
         slug: "wordpress-services",
         description:
@@ -115,50 +181,7 @@ export const services: Service[] = [
         ],
         featured: true,
     },
-    {
-        id: "3",
-        title: "Shopify & Shopify Plus Services",
-        slug: "shopify-services",
-        description:
-            "We design and develop scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands. Our Shopify solutions are built to convert, scale, and support long-term business growth.",
-        shortDescription:
-            "Scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands.",
-        icon: "ShoppingCart",
-        benefits: [
-            "Shopify & Shopify Plus store development",
-            "Custom themes & storefronts",
-            "Headless Shopify implementations",
-            "App integrations & custom development",
-            "Performance optimization & CRO",
-        ],
-        process: [
-            {
-                step: 1,
-                title: "Strategy & Planning",
-                description:
-                    "We analyze your commerce goals and design a Shopify strategy that drives growth and conversions.",
-            },
-            {
-                step: 2,
-                title: "Development & Customization",
-                description:
-                    "Our team develops custom Shopify stores, themes, storefronts, and headless implementations.",
-            },
-            {
-                step: 3,
-                title: "Integration & Optimization",
-                description:
-                    "We integrate apps, develop custom solutions, and optimize performance and conversion rates.",
-            },
-            {
-                step: 4,
-                title: "Launch & Growth",
-                description:
-                    "We launch your Shopify store and provide ongoing support to ensure long-term business growth.",
-            },
-        ],
-        featured: true,
-    },
+
 ];
 
 export const caseStudies: CaseStudy[] = [
@@ -420,84 +443,35 @@ export const teamMembers: TeamMember[] = [
 export const testimonials: Testimonial[] = [
     {
         id: "1",
-        name: "Sarah Johnson",
-        role: "VP of Customer Experience",
-        company: "TechCorp Inc.",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
+        name: "Bhuwanesh Mishra",
+        role: "Operations Manager",
+        company: "Cradleman",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
         quote:
-            "PiNodeAI transformed our customer service operations. The AI platform handles most inquiries seamlessly, allowing our team to focus on complex issues.",
+            "At Cradleman we focus on design, supply, installation and maintenance of building equipment—all under one roof. PiNodeAI helped us bring that same clarity to our digital presence: from facade access and glass facade cleaning to temporary suspended platforms, our teams and clients now have a single place to track projects and service requests. Responsive team, smooth handover.",
         rating: 5,
     },
     {
         id: "2",
-        name: "Robert Williams",
-        role: "CTO",
-        company: "Global Finance Corp",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+        name: "Priya Sharma",
+        role: "Founder",
+        company: "Feeable Street",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
         quote:
-            "The cloud migration was executed flawlessly with zero downtime. PiNodeAI's expertise in cloud infrastructure is unmatched.",
+            "Our Shopify Plus store by PiNodeAI has been a game-changer. From checkout to inventory, everything is built to scale. We've seen a real lift in conversions and our team can focus on growth, not tech fires.",
         rating: 5,
     },
     {
         id: "3",
-        name: "Jennifer Lee",
-        role: "CEO",
-        company: "Fashion Retail Co.",
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
-        quote:
-            "Our mobile app has been a game-changer. The team at PiNodeAI understood our vision and delivered beyond expectations.",
-        rating: 5,
-    },
-    {
-        id: "4",
-        name: "Mark Thompson",
-        role: "Director of Operations",
-        company: "DataSaaS Inc.",
+        name: "Amit Desai",
+        role: "Project Director",
+        company: "Rokmex / Site Guru",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200",
         quote:
-            "The real-time analytics platform has revolutionized how we serve our customers. The performance is outstanding.",
+            "As a tech partner, we needed a platform that could keep up with our clients. PiNodeAI delivered a robust, scalable solution with clear APIs and support. Integration and handover were seamless.",
         rating: 5,
     },
-    {
-        id: "5",
-        name: "Amanda White",
-        role: "IT Director",
-        company: "HealthCare Plus",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",
-        quote:
-            "PiNodeAI helped us achieve 100% HIPAA compliance while improving our system performance. Their security expertise is top-notch.",
-        rating: 5,
-    },
-    {
-        id: "6",
-        name: "James Brown",
-        role: "VP of Technology",
-        company: "Manufacturing Solutions Ltd.",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
-        quote:
-            "The digital transformation initiative has modernized our operations. We've seen significant improvements in efficiency and cost savings.",
-        rating: 5,
-    },
-    {
-        id: "7",
-        name: "Rachel Green",
-        role: "Founder",
-        company: "PayTech Solutions",
-        image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200",
-        quote:
-            "PiNodeAI built us a payment platform that's secure, scalable, and fast. We couldn't be happier with the results.",
-        rating: 5,
-    },
-    {
-        id: "8",
-        name: "Thomas Wilson",
-        role: "Operations Manager",
-        company: "Logistics Pro",
-        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200",
-        quote:
-            "The AI-powered supply chain system has reduced our costs significantly while improving delivery times. Excellent work!",
-        rating: 5,
-    },
+
 ];
 
 export const blogPosts: BlogPost[] = [
