@@ -1,51 +1,45 @@
 import { MetadataRoute } from "next";
-import { services, caseStudies, blogPosts } from "@/lib/constants";
+import { siteUrl } from "@/lib/constants";
+import { services } from "@/lib/constants";
+import { blogPosts } from "@/lib/constants";
+import { caseStudies } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://pinodeai.com";
+  const baseUrl = siteUrl;
 
-  const routes = [
-    "",
-    "/about",
-    "/services",
-    "/portfolio",
-    "/blog",
-    "/contact",
-    "/faq",
-    "/privacy",
-    "/terms",
-    "/cookies",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/portfolio`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/cookies`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+  ];
+
+  const servicePages: MetadataRoute.Sitemap = services.map((s) => ({
+    url: `${baseUrl}/services/${s.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: route === "" ? 1 : 0.8,
+    priority: 0.8,
   }));
 
-  const serviceRoutes = services.map((service) => ({
-    url: `${baseUrl}/services/${service.slug}`,
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
+    url: `${baseUrl}/blog/${p.slug}`,
+    lastModified: new Date(p.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const portfolioPages: MetadataRoute.Sitemap = caseStudies.map((c) => ({
+    url: `${baseUrl}/portfolio/${c.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
-  const portfolioRoutes = caseStudies.map((study) => ({
-    url: `${baseUrl}/portfolio/${study.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  const blogRoutes = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
-
-  return [...routes, ...serviceRoutes, ...portfolioRoutes, ...blogRoutes];
+  return [...staticPages, ...servicePages, ...blogPages, ...portfolioPages];
 }
-
-
-
-

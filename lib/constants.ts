@@ -14,6 +14,11 @@ export const companyName = "PieNodeAi";
 export const companyTagline = "Accelerating eCommerce, Digital Transformation, and Product Engineering";
 export const companyDescription = "We are a global digital consulting organization focused on accelerating eCommerce, digital transformation, and product engineering initiatives. By combining leading platforms such as Shopify Plus, Adobe, and WordPress with advanced technologies including AI, Node.js, Java, and Python, we engineer scalable, enterprise-grade digital solutions that drive measurable business outcomes.";
 
+/** Canonical site URL for SEO (no trailing slash). */
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://pinodeai.com";
+/** Default OG/Twitter image (absolute URL). Use 1200x630 for best results. */
+export const defaultOgImageUrl = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://pinodeai.com"}/og-default.png`;
+
 export const contactInfo = {
     email: "info@pienodeai.com",
     phone: "+91 8299273710",

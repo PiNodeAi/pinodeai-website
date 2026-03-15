@@ -1,0 +1,25 @@
+{
+  "name": "PieNodeAi - Accelerating eCommerce, Digital Transformation, and Product Engineering",
+  "short_name": "PieNodeAi",
+  "description": "We are a global digital consulting organization focused on accelerating eCommerce, digital transformation, and product engineering initiatives.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pienode_logo_2.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "productivity"]
+}
