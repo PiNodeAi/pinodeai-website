@@ -13,6 +13,7 @@ import {
   companyStats,
   blogPosts,
   caseStudies,
+  companyName,
 } from "@/lib/constants";
 import { formatDate } from "@/lib/utils";
 
@@ -138,7 +139,7 @@ export default function HomePage() {
           <div className="grid gap-12 md:grid-cols-2">
             <div>
               <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
-                About PiNodeAI
+                About {companyName}
               </h2>
               <p className="mb-6 text-gray-600 dark:text-gray-300">
                 We are a team of experienced technologists, designers, and

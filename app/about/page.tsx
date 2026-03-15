@@ -8,7 +8,7 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about PiNodeAI, our mission, values, and the talented team behind our success.",
+    `Learn about ${companyName}, our mission, values, and the talented team behind our success.`,
 };
 
 const values = [

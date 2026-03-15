@@ -10,7 +10,7 @@ import {
     SolutionOffering,
 } from "@/types";
 
-export const companyName = "PiNodeAI";
+export const companyName = "PieNodeAi";
 export const companyTagline = "Accelerating eCommerce, Digital Transformation, and Product Engineering";
 export const companyDescription = "We are a global digital consulting organization focused on accelerating eCommerce, digital transformation, and product engineering initiatives. By combining leading platforms such as Shopify Plus, Adobe, and WordPress with advanced technologies including AI, Node.js, Java, and Python, we engineer scalable, enterprise-grade digital solutions that drive measurable business outcomes.";
 
@@ -207,7 +207,7 @@ export const caseStudies: CaseStudy[] = [
             name: "Sarah Johnson",
             role: "VP of Customer Experience",
             quote:
-                "PiNodeAI transformed our customer service operations. The AI platform handles most inquiries seamlessly, allowing our team to focus on complex issues.",
+                "PieNodeAi transformed our customer service operations. The AI platform handles most inquiries seamlessly, allowing our team to focus on complex issues.",
         },
         technologies: ["Python", "TensorFlow", "React", "Node.js", "AWS"],
         services: ["AI & Machine Learning Solutions", "Web & Mobile Development"],
@@ -377,7 +377,7 @@ export const teamMembers: TeamMember[] = [
         id: "1",
         name: "Alex Chen",
         role: "CEO & Founder",
-        bio: "Alex has over 15 years of experience in technology and entrepreneurship. He founded PiNodeAI with a vision to make AI accessible to businesses of all sizes.",
+        bio: "Alex has over 15 years of experience in technology and entrepreneurship. He founded PieNodeAi with a vision to make AI accessible to businesses of all sizes.",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
         social: {
             linkedin: "https://linkedin.com/in/alexchen",
@@ -448,7 +448,7 @@ export const testimonials: Testimonial[] = [
         company: "Cradleman",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
         quote:
-            "At Cradleman we focus on design, supply, installation and maintenance of building equipment—all under one roof. PiNodeAI helped us bring that same clarity to our digital presence: from facade access and glass facade cleaning to temporary suspended platforms, our teams and clients now have a single place to track projects and service requests. Responsive team, smooth handover.",
+            "At Cradleman we focus on design, supply, installation and maintenance of building equipment—all under one roof. PieNodeAi helped us bring that same clarity to our digital presence: from facade access and glass facade cleaning to temporary suspended platforms, our teams and clients now have a single place to track projects and service requests. Responsive team, smooth handover.",
         rating: 5,
     },
     {
@@ -458,7 +458,7 @@ export const testimonials: Testimonial[] = [
         company: "Feeable Street",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
         quote:
-            "Our Shopify Plus store by PiNodeAI has been a game-changer. From checkout to inventory, everything is built to scale. We've seen a real lift in conversions and our team can focus on growth, not tech fires.",
+            "Our Shopify Plus store by PieNodeAi has been a game-changer. From checkout to inventory, everything is built to scale. We've seen a real lift in conversions and our team can focus on growth, not tech fires.",
         rating: 5,
     },
     {
@@ -468,7 +468,7 @@ export const testimonials: Testimonial[] = [
         company: "Rokmex / Site Guru",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200",
         quote:
-            "As a tech partner, we needed a platform that could keep up with our clients. PiNodeAI delivered a robust, scalable solution with clear APIs and support. Integration and handover were seamless.",
+            "As a tech partner, we needed a platform that could keep up with our clients. PieNodeAi delivered a robust, scalable solution with clear APIs and support. Integration and handover were seamless.",
         rating: 5,
     },
 
@@ -687,9 +687,9 @@ export const blogPosts: BlogPost[] = [
 export const faqs: FAQ[] = [
     {
         id: "1",
-        question: "What services does PiNodeAI offer?",
+        question: "What services does PieNodeAi offer?",
         answer:
-            "PiNodeAI offers comprehensive digital consulting services including Adobe Experience Manager (AEM) Services, WordPress Services, and Shopify & Shopify Plus Services. We combine leading platforms with advanced technologies to engineer scalable, enterprise-grade digital solutions.",
+            "PieNodeAi offers comprehensive digital consulting services including Adobe Experience Manager (AEM) Services, WordPress Services, and Shopify & Shopify Plus Services. We combine leading platforms with advanced technologies to engineer scalable, enterprise-grade digital solutions.",
         category: "general",
     },
     {

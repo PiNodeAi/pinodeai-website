@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         template: `%s | ${companyName}`,
     },
     description:
-        "PiNodeAI provides cutting-edge AI solutions, cloud infrastructure, web development, and digital transformation services to help businesses thrive in the digital age.",
+        `${companyName} provides cutting-edge AI solutions, cloud infrastructure, web development, and digital transformation services to help businesses thrive in the digital age.`,
     keywords: [
         "AI solutions",
         "machine learning",

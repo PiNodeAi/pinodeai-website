@@ -1,4 +1,4 @@
-# PiNodeAI Website
+# PieNodeAi Website
 
 A modern, professional service-based company website built with Next.js 14+, TypeScript, and Tailwind CSS.
 

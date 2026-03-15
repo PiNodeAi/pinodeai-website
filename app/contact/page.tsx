@@ -8,7 +8,7 @@ import { contactInfo, companyName } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with PiNodeAI. We&apos;re here to help you with your technology needs.",
+    `Get in touch with ${companyName}. We're here to help you with your technology needs.`,
 };
 
 export default function ContactPage() {
