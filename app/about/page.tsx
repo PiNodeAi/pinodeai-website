@@ -8,7 +8,7 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about PiNodeAI, our mission, values, and the talented team behind our success.",
+    `Learn about ${companyName}, our mission, values, and the talented team behind our success.`,
 };
 
 const values = [
@@ -35,12 +35,22 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2014", event: "Company Founded" },
-  { year: "2016", event: "First 100 Clients" },
-  { year: "2018", event: "Expanded to AI/ML Services" },
-  { year: "2020", event: "Opened International Offices" },
-  { year: "2022", event: "Reached 1000+ Projects" },
-  { year: "2024", event: "Industry Recognition Awards" },
+  {
+    year: "2022",
+    event: "Started with a small idea—delivering solutions for small-scale requirements and early client partnerships.",
+  },
+  {
+    year: "2023",
+    event: "Scaled to full-stack development; began offering end-to-end product engineering and digital transformation.",
+  },
+  {
+    year: "2024",
+    event: "Launched complete AI/ML solutions and data migration services alongside our full-stack offerings.",
+  },
+  {
+    year: "Today",
+    event: "Full-stack engineering (frontend, backend, cloud), production AI/ML pipelines and model deployment, ETL and legacy-to-cloud data migration, plus DevOps and platform automation—enabling scale and modernisation.",
+  },
 ];
 
 export default function AboutPage() {
@@ -71,17 +81,17 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300">
                 <p>
-                  Founded in 2014, {companyName} began with a simple mission:
-                  to make advanced technology accessible and practical for
-                  businesses of all sizes. What started as a small team of
-                  developers has grown into a full-service technology company
-                  serving clients worldwide.
+                  We started in 2022 with a small idea: to give solutions to
+                  small-scale requirements. Today {companyName} delivers
+                  full-stack solutions alongside complete AI/ML and data
+                  migration services—helping businesses of every size transform
+                  and scale.
                 </p>
                 <p>
-                  Over the years, we've helped hundreds of companies navigate
-                  their digital transformation journeys, from startups looking to
-                  build their first product to enterprises modernizing legacy
-                  systems.
+                  From early client partnerships to enterprise digital
+                  transformation, we&apos;ve grown by staying close to real
+                  needs—building products, migrating data, and embedding
+                  AI/ML where it creates the most impact.
                 </p>
                 <p>
                   Our commitment to excellence, innovation, and client success
@@ -146,7 +156,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Team */}
-      <Section className="bg-gray-50 dark:bg-gray-900">
+      {/* <Section className="bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
@@ -217,7 +227,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Timeline */}
       <Section>
@@ -227,7 +237,7 @@ export default function AboutPage() {
               Our Journey
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
-              Key milestones in our company's history
+              Key milestones in our company&apos;s history
             </p>
           </div>
           <div className="relative">
@@ -236,9 +246,8 @@ export default function AboutPage() {
               {milestones.map((milestone, index) => (
                 <div
                   key={milestone.year}
-                  className={`flex items-center gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`flex items-center gap-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   <div className="flex-1 text-right md:w-1/2">
                     {index % 2 === 0 && (

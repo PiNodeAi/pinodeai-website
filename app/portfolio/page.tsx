@@ -35,8 +35,8 @@ export default function PortfolioPage() {
               Our Portfolio
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-              Explore our successful projects and see how we've helped businesses
-              achieve their goals
+              Explore our successful projects and see how we&apos;ve helped
+              businesses achieve their goals
             </p>
           </div>
         </div>

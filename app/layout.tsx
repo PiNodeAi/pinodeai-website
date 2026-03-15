@@ -1,11 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import BackToTop from "@/components/ui/back-to-top";
-import { companyName, companyTagline } from "@/lib/constants";
+import { JsonLd } from "@/components/seo/json-ld";
+import {
+    companyName,
+    companyTagline,
+    companyDescription,
+    siteUrl,
+    defaultOgImageUrl,
+} from "@/lib/constants";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -13,13 +20,23 @@ const poppins = Poppins({
     weight: ["300", "400", "500", "600", "700"],
 });
 
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    themeColor: [
+        { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+        { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+    ],
+};
+
 export const metadata: Metadata = {
+    metadataBase: new URL(siteUrl),
     title: {
         default: `${companyName} - ${companyTagline}`,
         template: `%s | ${companyName}`,
     },
-    description:
-        "PiNodeAI provides cutting-edge AI solutions, cloud infrastructure, web development, and digital transformation services to help businesses thrive in the digital age.",
+    description: companyDescription,
     keywords: [
         "AI solutions",
         "machine learning",
@@ -27,28 +44,81 @@ export const metadata: Metadata = {
         "web development",
         "mobile apps",
         "digital transformation",
+        "eCommerce",
+        "Shopify Plus",
+        "Adobe Experience Manager",
+        "WordPress",
+        "product engineering",
+        "PieNodeAi",
     ],
-    authors: [{ name: companyName }],
+    authors: [{ name: companyName, url: siteUrl }],
     creator: companyName,
+    publisher: companyName,
+    applicationName: companyName,
+    referrer: "origin-when-cross-origin",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false,
+    },
+    alternates: {
+        canonical: siteUrl,
+    },
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://pinodeai.com",
+        url: siteUrl,
         siteName: companyName,
         title: `${companyName} - ${companyTagline}`,
-        description:
-            "Transforming Ideas into Intelligent Solutions with AI, Cloud, and Modern Development",
+        description: companyDescription,
+        images: [
+            {
+                url: defaultOgImageUrl,
+                width: 1200,
+                height: 630,
+                alt: `${companyName} - ${companyTagline}`,
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
         title: `${companyName} - ${companyTagline}`,
-        description:
-            "Transforming Ideas into Intelligent Solutions with AI, Cloud, and Modern Development",
+        description: companyDescription,
+        images: [defaultOgImageUrl],
+        creator: "@pinodeai",
+        site: "@pinodeai",
     },
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
     },
+    verification: {
+        // Add your verification codes when available
+        // google: "your-google-verification-code",
+        // yandex: "your-yandex-verification-code",
+        // bing: "your-bing-verification-code",
+    },
+    icons: {
+        icon: [
+            { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+            { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+            { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
+            { url: "/favicon-64x64.png", type: "image/png", sizes: "64x64" },
+            { url: "/favicon-128x128.png", type: "image/png", sizes: "128x128" },
+            { url: "/favicon-512x512.png", type: "image/png", sizes: "512x512" },
+        ],
+        shortcut: "/favicon-32x32.png",
+        apple: "/favicon-128x128.png",
+    },
+    manifest: "/manifest.json",
+    category: "technology",
 };
 
 export default function RootLayout({
@@ -59,9 +129,10 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={poppins.variable}>
+                <JsonLd />
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
+                    defaultTheme="dark"
                     enableSystem
                     disableTransitionOnChange
                 >

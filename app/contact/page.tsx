@@ -8,7 +8,7 @@ import { contactInfo, companyName } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with PiNodeAI. We're here to help you with your technology needs.",
+    `Get in touch with ${companyName}. We're here to help you with your technology needs.`,
 };
 
 export default function ContactPage() {
@@ -22,8 +22,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-              Have a project in mind? We'd love to hear from you. Send us a
-              message and we'll respond as soon as possible.
+              Have a project in mind? We&apos;d love to hear from you. Send us a
+              message and we&apos;ll respond as soon as possible.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
           </div>
 
           {/* Map Placeholder */}
-          <div className="mt-12">
+          {/* <div className="mt-12">
             <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
               Find Us
             </h2>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                 className="h-full w-full"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </Section>
     </>

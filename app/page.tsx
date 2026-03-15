@@ -1,16 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, User } from "lucide-react";
 import Section from "@/components/layout/section";
 import Button from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import ServiceIcon from "@/components/ui/service-icon";
 import {
   services,
+  platforms,
+  solutionOfferings,
   testimonials,
   companyStats,
   blogPosts,
   caseStudies,
+  companyName,
 } from "@/lib/constants";
 import { formatDate } from "@/lib/utils";
 
@@ -34,12 +37,12 @@ export default function HomePage() {
           >
             <source src="/desktop-video.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-white/70 dark:bg-gray-950/70" />
+          <div className="absolute inset-0 bg-white/10 dark:bg-gray-950/70" />
         </div>
         <div className="container relative z-10 mx-auto px-4">
           <div className="grid items-center gap-12 py-20 md:py-32">
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-              <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+              <h1 className="mb-6 text-4xl font-bold tracking-tight text-white dark:text-white md:text-5xl lg:text-6xl">
                 Transforming Ideas into
                 <span className="block text-primary-600 dark:text-primary-400">
                   Intelligent Solutions
@@ -136,7 +139,7 @@ export default function HomePage() {
           <div className="grid gap-12 md:grid-cols-2">
             <div>
               <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
-                About PiNodeAI
+                About {companyName}
               </h2>
               <p className="mb-6 text-gray-600 dark:text-gray-300">
                 We are a team of experienced technologists, designers, and
@@ -168,6 +171,76 @@ export default function HomePage() {
         </div>
       </Section>
 
+      {/* Platforms — Unlocking Infinite Possibilities */}
+      <Section className="bg-gray-900 dark:bg-gray-950">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+              Unlocking Infinite Possibilities
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-300">
+              Our work spans industries, geographies and business models—whether
+              a startup or an enterprise, we deliver digital solutions that
+              transform challenges into growth opportunities.
+            </p>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {platforms.map((platform) => (
+              <Card
+                key={platform.id}
+                hover
+                className="flex min-h-[240px] flex-col items-center justify-center border-primary-700/50 bg-primary-800/40 p-6 text-center dark:bg-primary-900/30"
+              >
+                <div className="mb-4 flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border-2 border-white/80 text-white">
+                  <ServiceIcon
+                    iconName={platform.icon}
+                    className="h-7 w-7 text-white"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white">
+                  {platform.title}
+                </h3>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* How we can help your business */}
+      <Section>
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
+              How we can help your business
+            </h2>
+            <p className="mx-auto max-w-3xl text-gray-600 dark:text-gray-300">
+              Smart, streamlined technology—built for ease, built for results.
+              Our solutions help businesses enhance efficiency, accelerate
+              growth, and optimise costs.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {solutionOfferings.map((offering) => (
+              <Card
+                key={offering.id}
+                hover
+                className="flex flex-col items-center justify-center border-primary-200 bg-primary-50/50 p-6 text-center dark:border-primary-800 dark:bg-primary-900/20"
+              >
+                <div className="mb-3 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400">
+                  <ServiceIcon
+                    iconName={offering.icon}
+                    className="h-6 w-6"
+                  />
+                </div>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-white md:text-base">
+                  {offering.title}
+                </h3>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
       {/* Case Studies */}
       <Section>
         <div className="container mx-auto px-4">
@@ -176,7 +249,7 @@ export default function HomePage() {
               Success Stories
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
-              See how we've helped businesses achieve their goals
+              See how we&apos;ve helped businesses achieve their goals
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -222,20 +295,15 @@ export default function HomePage() {
               What Our Clients Say
             </h2>
             <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
-              Don't just take our word for it
+              Don&apos;t just take our word for it
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.slice(0, 6).map((testimonial) => (
               <Card key={testimonial.id} className="flex flex-col">
                 <div className="mb-4 flex items-center space-x-4">
-                  <div className="relative h-12 w-12 overflow-hidden rounded-full">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400">
+                    <User className="h-6 w-6" aria-hidden />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 dark:text-white">
@@ -247,7 +315,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="mb-4 flex-grow italic text-gray-700 dark:text-gray-300">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="flex text-yellow-400">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -317,7 +385,7 @@ export default function HomePage() {
               Ready to Transform Your Business?
             </h2>
             <p className="mb-8 mx-auto max-w-2xl text-lg opacity-90">
-              Let's discuss how we can help you achieve your digital
+              Let&apos;s discuss how we can help you achieve your digital
               transformation goals
             </p>
             <Link href="/contact">

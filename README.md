@@ -1,4 +1,4 @@
-# PiNodeAI Website
+# PieNodeAi Website
 
 A modern, professional service-based company website built with Next.js 14+, TypeScript, and Tailwind CSS.
 
@@ -150,5 +150,8 @@ This project is licensed under the MIT License.
 
 ## Support
 
-For support, email hello@pinodeai.com or visit our website.
+For support, email info@pienodeai.com or visit our website.
+
+
+
 

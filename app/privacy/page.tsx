@@ -28,10 +28,10 @@ export default function PrivacyPage() {
           <div className="prose prose-lg mx-auto max-w-3xl dark:prose-invert">
             <h2>Introduction</h2>
             <p>
-              {companyName} ("we," "our," or "us") is committed to protecting
-              your privacy. This Privacy Policy explains how we collect, use,
-              disclose, and safeguard your information when you visit our website
-              and use our services.
+              {companyName} (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;)
+              is committed to protecting your privacy. This Privacy Policy
+              explains how we collect, use, disclose, and safeguard your
+              information when you visit our website and use our services.
             </p>
 
             <h2>Information We Collect</h2>
@@ -105,4 +105,6 @@ export default function PrivacyPage() {
     </>
   );
 }
+
+
 
