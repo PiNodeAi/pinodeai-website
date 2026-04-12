@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar from "@/components/layout/navbar";
@@ -13,12 +12,6 @@ import {
     siteUrl,
     defaultOgImageUrl,
 } from "@/lib/constants";
-
-const poppins = Poppins({
-    subsets: ["latin"],
-    variable: "--font-poppins",
-    weight: ["300", "400", "500", "600", "700"],
-});
 
 export const viewport: Viewport = {
     width: "device-width",
@@ -128,7 +121,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={poppins.variable}>
+            <body>
                 <JsonLd />
                 <ThemeProvider
                     attribute="class"
