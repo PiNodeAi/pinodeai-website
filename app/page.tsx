@@ -70,9 +70,43 @@ export default function HomePage() {
           </div>
         </div>
       </Section>
+      {/* Platforms — Unlocking Infinite Possibilities */}
+      <Section className="bg-gray-900 dark:bg-gray-950">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+              Unlocking Infinite Possibilities
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-300">
+              We engineer end-to-end digital solutions at the intersection of strategy, technology, and scale transforming your most complex challenges into measurable, high-performance growth outcomes.
+
+
+            </p>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {platforms.map((platform) => (
+              <Card
+                key={platform.id}
+                hover
+                className="flex min-h-[240px] flex-col items-center justify-center border-primary-700/50 bg-primary-800/40 p-6 text-center dark:bg-primary-900/30"
+              >
+                <div className="mb-4 flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border-2 border-white/80 text-white">
+                  <ServiceIcon
+                    iconName={platform.icon}
+                    className="h-7 w-7 text-white"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-white">
+                  {platform.title}
+                </h3>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
 
       {/* Stats Section */}
-      <Section className="bg-primary-600 text-white dark:bg-primary-700">
+      {/* <Section className="bg-primary-600 text-white dark:bg-primary-700">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {companyStats.map((stat) => (
@@ -89,8 +123,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </Section>
-
+      </Section> */}
       {/* Services Overview */}
       <Section>
         <div className="container mx-auto px-4">
@@ -171,40 +204,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Platforms — Unlocking Infinite Possibilities */}
-      <Section className="bg-gray-900 dark:bg-gray-950">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-              Unlocking Infinite Possibilities
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-300">
-              Our work spans industries, geographies and business models—whether
-              a startup or an enterprise, we deliver digital solutions that
-              transform challenges into growth opportunities.
-            </p>
-          </div>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {platforms.map((platform) => (
-              <Card
-                key={platform.id}
-                hover
-                className="flex min-h-[240px] flex-col items-center justify-center border-primary-700/50 bg-primary-800/40 p-6 text-center dark:bg-primary-900/30"
-              >
-                <div className="mb-4 flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border-2 border-white/80 text-white">
-                  <ServiceIcon
-                    iconName={platform.icon}
-                    className="h-7 w-7 text-white"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-white">
-                  {platform.title}
-                </h3>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </Section>
+
 
       {/* How we can help your business */}
       <Section>
@@ -242,7 +242,7 @@ export default function HomePage() {
       </Section>
 
       {/* Case Studies */}
-      <Section>
+      {/* <Section>
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
@@ -285,10 +285,10 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Testimonials */}
-      <Section className="bg-gray-50 dark:bg-gray-900">
+      {/* <Section className="bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
@@ -326,7 +326,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Blog Preview */}
       <Section>

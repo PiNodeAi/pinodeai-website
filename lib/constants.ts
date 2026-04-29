@@ -56,139 +56,466 @@ export const solutionOfferings: SolutionOffering[] = [
 export const services: Service[] = [
     {
         id: "1",
-        title: "Shopify & Shopify Plus Services",
-        slug: "shopify-services",
+        title: "AI/ML Powered Analytics",
+        slug: "ai-ml-analytics",
         description:
-            "We design and develop scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands. Our Shopify solutions are built to convert, scale, and support long-term business growth.",
+            "We design and deploy production-grade AI and machine learning systems that transform raw data into actionable intelligence. From predictive modeling and recommendation engines to LLM-powered applications and real-time inference pipelines, our solutions are built on modern MLOps practices for reliability, reproducibility, and scale.",
         shortDescription:
-            "Scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands.",
-        icon: "ShoppingCart",
+            "Production ML pipelines, predictive models, LLM integrations, and real-time inference at scale.",
+        icon: "BrainCircuit",
         benefits: [
-            "Shopify & Shopify Plus store development",
-            "Custom themes & storefronts",
-            "Headless Shopify implementations",
-            "App integrations & custom development",
-            "Performance optimization & CRO",
+            "Custom ML model development: classification, regression, clustering, forecasting",
+            "LLM integration & fine-tuning: OpenAI, Anthropic Claude, Mistral, Llama",
+            "RAG (Retrieval-Augmented Generation) pipelines with vector databases (Pinecone, Weaviate, pgvector)",
+            "Real-time & batch inference infrastructure on AWS SageMaker, Vertex AI, or Azure ML",
+            "MLOps pipelines: MLflow, DVC, Weights & Biases, Kubeflow",
+            "Data preprocessing, feature engineering & feature store design (Feast, Tecton)",
+            "Model monitoring, drift detection & automated retraining workflows",
         ],
         process: [
             {
                 step: 1,
-                title: "Strategy & Planning",
+                title: "Data Audit & Problem Framing",
                 description:
-                    "We analyze your commerce goals and design a Shopify strategy that drives growth and conversions.",
+                    "We assess data availability, quality, and labeling to define a feasible ML problem statement, success metrics, and baseline benchmarks before any model development begins.",
             },
             {
                 step: 2,
-                title: "Development & Customization",
+                title: "Experimentation & Model Development",
                 description:
-                    "Our team develops custom Shopify stores, themes, storefronts, and headless implementations.",
+                    "We run structured experiments and track runs via MLflow or W&B, iterating on feature engineering, model architectures, and hyperparameter tuning.",
             },
             {
                 step: 3,
-                title: "Integration & Optimization",
+                title: "Pipeline Engineering & Deployment",
                 description:
-                    "We integrate apps, develop custom solutions, and optimize performance and conversion rates.",
+                    "We productionize models as REST or gRPC inference endpoints, build batch scoring pipelines, and containerize workloads with Docker for deployment on SageMaker, Vertex AI, or self-hosted Kubernetes.",
             },
             {
                 step: 4,
-                title: "Launch & Growth",
+                title: "Monitoring, Retraining & Iteration",
                 description:
-                    "We launch your Shopify store and provide ongoing support to ensure long-term business growth.",
+                    "We instrument prediction monitoring, configure data drift alerts, and establish automated retraining triggers — ensuring model performance holds as real-world distributions shift over time.",
             },
         ],
         featured: true,
     },
     {
         id: "2",
-        title: "Adobe Experience Manager (AEM) Services",
-        slug: "adobe-experience-manager",
+        title: "Digital Transformation",
+        slug: "digital-transformation",
         description:
-            "We help enterprises deliver personalized, content-driven digital experiences using Adobe Experience Manager. Our AEM solutions enable faster content delivery, improved personalization, and seamless omnichannel experiences.",
+            "We help enterprises modernize legacy systems, re-platform core business processes, and build the digital operating model needed to compete in a software-driven economy. Our engagements span API-first re-architecture, cloud migration, process automation, and the organizational change management required to make transformation stick.",
         shortDescription:
-            "Personalized, content-driven digital experiences with Adobe Experience Manager.",
-        icon: "Layers",
+            "Legacy modernization, API-first re-architecture, cloud migration, and process digitization.",
+        icon: "Zap",
         benefits: [
-            "AEM Sites & Assets implementation",
-            "Custom component and template development",
-            "AEM Cloud Service migration",
-            "Headless AEM integrations",
-            "Performance, security & scalability optimization",
+            "Legacy system assessment & modernization roadmapping",
+            "Monolith-to-microservices decomposition & strangler fig migrations",
+            "API-first platform design: REST, GraphQL, AsyncAPI (Kafka, AMQP)",
+            "Cloud-native re-architecture on AWS, GCP, or Azure",
+            "Business process automation: Camunda, Temporal, AWS Step Functions",
+            "Enterprise integration: MuleSoft, Boomi, Apache Camel, Azure Integration Services",
+            "Developer enablement & platform engineering (Backstage, internal developer portals)",
         ],
         process: [
             {
                 step: 1,
-                title: "Discovery & Assessment",
+                title: "Current-State Assessment",
                 description:
-                    "We analyze your content requirements and digital experience goals to design the optimal AEM solution.",
+                    "We map your existing technology landscape, integration dependencies, and technical debt to produce a prioritized modernization backlog with effort-to-value scoring.",
             },
             {
                 step: 2,
-                title: "Implementation & Development",
+                title: "Target Architecture Design",
                 description:
-                    "Our team implements AEM Sites & Assets, develops custom components and templates tailored to your needs.",
+                    "We define the target-state architecture — domain boundaries, API contracts, data ownership, and cloud infrastructure topology — validated against your capacity, risk tolerance, and business timelines.",
             },
             {
                 step: 3,
-                title: "Migration & Integration",
+                title: "Phased Execution",
                 description:
-                    "We migrate to AEM Cloud Service and integrate headless architectures for modern digital experiences.",
+                    "We execute migration and re-platform work in value-delivering increments, applying strangler fig, parallel run, or big-bang patterns as appropriate to minimize business disruption.",
             },
             {
                 step: 4,
-                title: "Optimization & Support",
+                title: "Enablement & Governance",
                 description:
-                    "We optimize performance, security, and scalability while providing ongoing support and enhancements.",
+                    "We establish platform engineering practices, internal developer portal tooling, and governance frameworks so your teams can sustain and extend the new architecture independently.",
             },
         ],
         featured: true,
     },
     {
         id: "3",
-        title: "WordPress Services",
-        slug: "wordpress-services",
+        title: "Data Migration & Automation",
+        slug: "data-migration-automation",
         description:
-            "We build flexible, secure, and high-performing WordPress solutions tailored to your business goals. From marketing websites to content-rich platforms, our WordPress services ensure scalability and ease of management.",
+            "We design and execute complex data migrations and build durable automation pipelines that eliminate manual data workflows. Whether migrating from on-premise databases to cloud data warehouses, consolidating post-acquisition data estates, or automating multi-system data synchronization, we ensure data integrity, auditability, and zero-downtime delivery.",
         shortDescription:
-            "Flexible, secure, and high-performing WordPress solutions for your business.",
-        icon: "Globe",
+            "ETL/ELT pipelines, warehouse migrations, data quality frameworks, and workflow automation.",
+        icon: "Database",
         benefits: [
-            "Custom WordPress development",
-            "Headless WordPress architectures",
-            "WooCommerce development",
-            "Performance, SEO & security optimization",
-            "Content migration & platform upgrades",
+            "ETL/ELT pipeline development: Apache Spark, dbt, Fivetran, Airbyte, AWS Glue",
+            "Cloud data warehouse migration: Snowflake, BigQuery, Redshift, Databricks",
+            "CDC (Change Data Capture) with Debezium, Kafka Connect, or AWS DMS",
+            "Data quality frameworks: Great Expectations, Soda, Monte Carlo",
+            "Workflow orchestration: Apache Airflow, Prefect, Dagster",
+            "Post-migration validation, reconciliation reporting & rollback planning",
+            "RPA & task automation: Python scripting, Power Automate, n8n",
         ],
         process: [
             {
                 step: 1,
-                title: "Planning & Design",
+                title: "Source Profiling & Mapping",
                 description:
-                    "We assess your requirements and design a WordPress solution that aligns with your business objectives.",
+                    "We profile source data for schema complexity, volume, data quality issues, and referential integrity to produce a field-level migration mapping and risk register.",
             },
             {
                 step: 2,
-                title: "Development & Customization",
+                title: "Pipeline Architecture & Build",
                 description:
-                    "Our team builds custom WordPress sites, headless architectures, and WooCommerce stores tailored to your needs.",
+                    "We architect and build ELT pipelines using dbt or Spark, configure CDC streams for live replication, and define idempotent transformation logic with full test coverage.",
             },
             {
                 step: 3,
-                title: "Optimization & Migration",
+                title: "Validation & Cutover",
                 description:
-                    "We optimize performance, SEO, and security, and handle content migration and platform upgrades seamlessly.",
+                    "We run parallel operation with automated reconciliation checks across source and target, then execute a staged cutover with defined rollback triggers and stakeholder sign-off gates.",
             },
             {
                 step: 4,
-                title: "Launch & Maintenance",
+                title: "Automation & Handover",
                 description:
-                    "We launch your WordPress solution and provide ongoing maintenance, updates, and support.",
+                    "We wrap recurring data workflows in orchestrated pipelines, configure alerting on SLA breaches and quality failures, and document runbooks for ongoing operations.",
             },
         ],
         featured: true,
     },
-
+    {
+        id: "4",
+        title: "Data Engineering",
+        slug: "data-engineering",
+        description:
+            "We build the data infrastructure that makes analytics, ML, and business intelligence reliable and scalable. From modern data lakehouse architectures and real-time streaming platforms to semantic layers and self-serve analytics tooling, our data engineering practice turns fragmented data estates into trusted, queryable assets.",
+        shortDescription:
+            "Lakehouse architecture, streaming pipelines, dbt modeling, and self-serve analytics infrastructure.",
+        icon: "BarChart2",
+        benefits: [
+            "Modern data lakehouse design: Delta Lake, Apache Iceberg, Apache Hudi on S3/GCS",
+            "Streaming data platforms: Apache Kafka, Apache Flink, Kinesis Data Streams, Pub/Sub",
+            "dbt project architecture, semantic layer design & data contract enforcement",
+            "Data catalog & lineage: Apache Atlas, OpenMetadata, DataHub, Collibra",
+            "Cloud-native warehousing: Snowflake, BigQuery, Redshift & cost optimization",
+            "Real-time OLAP: Apache Druid, ClickHouse, Tinybird",
+            "Data mesh implementation: domain ownership, data product design & federated governance",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Data Platform Assessment",
+                description:
+                    "We audit your current ingestion, storage, and consumption layers to identify reliability gaps, query performance bottlenecks, and ungoverned data flows.",
+            },
+            {
+                step: 2,
+                title: "Architecture Design",
+                description:
+                    "We design the target platform architecture — medallion lakehouse, streaming topology, or data mesh — selecting technologies to match your team's operational maturity and cost constraints.",
+            },
+            {
+                step: 3,
+                title: "Build & Model",
+                description:
+                    "We build ingestion pipelines, write layered dbt models (staging/intermediate/mart), enforce data contracts, and configure CI/CD for the data platform itself.",
+            },
+            {
+                step: 4,
+                title: "Governance, Documentation & Enablement",
+                description:
+                    "We populate data catalogs, define ownership and SLO agreements per data product, and train analytics and engineering teams to operate and extend the platform independently.",
+            },
+        ],
+        featured: false,
+    },
+    {
+        id: "5",
+        title: "Point of Sale Solutions",
+        slug: "point-of-sale",
+        description:
+            "We design and integrate modern POS ecosystems that unify in-store and digital commerce — connecting POS hardware, inventory systems, loyalty platforms, and back-office ERP into a single, real-time operational view. Whether building on Shopify POS, Square, or custom POS APIs, we engineer the integration layer that eliminates inventory discrepancies and enables omnichannel fulfillment.",
+        shortDescription:
+            "POS integration engineering connecting in-store hardware, inventory, loyalty, and ERP.",
+        icon: "ShoppingCart",
+        benefits: [
+            "Shopify POS Pro configuration, hardware setup & custom POS UI extensions",
+            "POS API integration: Square, Lightspeed, Toast, Stripe Terminal",
+            "Real-time inventory sync across POS, WMS, and e-commerce channels",
+            "Omnichannel order management: BOPIS, ship-from-store & inter-location transfers",
+            "Loyalty & CRM integration: Yotpo, LoyaltyLion, Salesforce, HubSpot",
+            "ERP synchronization: NetSuite, SAP, Microsoft Dynamics 365",
+            "Custom receipt templating, reporting dashboards & store operations tooling",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Operations & Integration Mapping",
+                description:
+                    "We map your in-store workflows, hardware estate, and existing system integrations to identify data ownership boundaries and define the target integration topology.",
+            },
+            {
+                step: 2,
+                title: "POS Configuration & Customization",
+                description:
+                    "We configure your POS platform, develop custom POS UI extensions for bespoke workflows, and integrate payment terminals, barcode scanners, and receipt printers.",
+            },
+            {
+                step: 3,
+                title: "Backend Integration",
+                description:
+                    "We build real-time or event-driven integration pipelines connecting POS to inventory, ERP, CRM, and loyalty systems — ensuring consistent product, pricing, and customer data across all touchpoints.",
+            },
+            {
+                step: 4,
+                title: "Rollout, Training & Support",
+                description:
+                    "We manage phased store rollouts with staff training, monitor integration health post-launch, and provide ongoing support for new locations, catalog changes, and platform upgrades.",
+            },
+        ],
+        featured: false,
+    },
+    {
+        id: "6",
+        title: "Blockchain & Web3 Development",
+        slug: "blockchain",
+        description:
+            "We design and build decentralized applications, smart contract systems, and tokenization infrastructure for enterprises and Web3 startups. From DeFi protocol development and NFT platforms to enterprise blockchain networks for supply chain provenance and digital asset management, our engineers bring production experience across EVM-compatible chains and permissioned ledger platforms.",
+        shortDescription:
+            "Smart contracts, dApps, tokenization infrastructure, and enterprise blockchain networks.",
+        icon: "Link",
+        benefits: [
+            "Smart contract development & auditing: Solidity, Vyper (Ethereum, Polygon, Arbitrum, Base)",
+            "DeFi protocol engineering: AMMs, lending protocols, yield aggregation strategies",
+            "NFT platform development: ERC-721, ERC-1155, metadata pipelines & marketplace integrations",
+            "Web3 frontend: ethers.js, viem, wagmi, RainbowKit, WalletConnect v2",
+            "Enterprise blockchain: Hyperledger Fabric, Hyperledger Besu, Corda",
+            "On-chain indexing: The Graph subgraphs, Ponder, Goldsky",
+            "IPFS / Arweave decentralized storage & on-chain data architecture",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Protocol Design & Threat Modeling",
+                description:
+                    "We define the on-chain data model, token economics, and access control model, then conduct threat modeling to identify reentrancy, oracle manipulation, and privilege escalation risks before writing any Solidity.",
+            },
+            {
+                step: 2,
+                title: "Smart Contract Development",
+                description:
+                    "We develop and unit-test smart contracts using Hardhat or Foundry, applying proxy upgrade patterns (OpenZeppelin UUPS/Transparent) where upgradability is required.",
+            },
+            {
+                step: 3,
+                title: "Audit & Testnet Deployment",
+                description:
+                    "We perform internal security reviews, coordinate third-party audits, deploy to testnet environments, and run integration tests against forked mainnet state before production deployment.",
+            },
+            {
+                step: 4,
+                title: "Frontend Integration & Mainnet Launch",
+                description:
+                    "We integrate contracts into the Web3 frontend, configure subgraph indexing, deploy to mainnet or target L2, and establish an on-call incident response protocol for post-launch monitoring.",
+            },
+        ],
+        featured: false,
+    },
+    {
+        id: "7",
+        title: "ERP & ECM Implementations",
+        slug: "erp-ecm",
+        description:
+            "We implement, configure, and extend enterprise resource planning and enterprise content management platforms to digitize core business operations. From NetSuite and SAP S/4HANA implementations to OpenText and SharePoint ECM deployments, we bridge the gap between out-of-the-box platform capabilities and the custom workflows your operations actually require.",
+        shortDescription:
+            "NetSuite, SAP, Microsoft Dynamics, OpenText, and SharePoint implementations and customizations.",
+        icon: "Layers",
+        benefits: [
+            "ERP implementation & configuration: NetSuite, SAP S/4HANA, Microsoft Dynamics 365, Odoo",
+            "Custom module development: SuiteScript (NetSuite), ABAP (SAP), Power Platform extensions",
+            "ECM platforms: OpenText Content Suite, Microsoft SharePoint, Alfresco, M-Files",
+            "Document management workflows, metadata taxonomy & retention policy configuration",
+            "ERP-to-ecommerce real-time integration: inventory, order & financial data sync",
+            "Data migration from legacy ERP with field-level reconciliation validation",
+            "RBAC configuration, audit trail setup & compliance reporting (SOX, ISO 27001)",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Requirements & Gap Analysis",
+                description:
+                    "We run structured workshops with finance, operations, and IT stakeholders to map current processes to platform capabilities, identifying configuration gaps requiring custom development.",
+            },
+            {
+                step: 2,
+                title: "Configuration & Customization",
+                description:
+                    "We configure the platform to match your chart of accounts, approval hierarchies, and workflows, then develop custom scripts and integrations for gaps the standard platform cannot address.",
+            },
+            {
+                step: 3,
+                title: "Data Migration & Integration",
+                description:
+                    "We migrate historical master data and transactional records with field-level mapping validation, and build real-time connectors to ecommerce, CRM, WMS, and banking platforms.",
+            },
+            {
+                step: 4,
+                title: "UAT, Training & Go-Live",
+                description:
+                    "We run user acceptance testing cycles, deliver role-specific training, and manage a phased go-live with hypercare support before handing steady-state operations to your team.",
+            },
+        ],
+        featured: false,
+    },
+    {
+        id: "8",
+        title: "Quality Assurance & Testing",
+        slug: "quality-assurance",
+        description:
+            "We embed quality engineering into the software delivery lifecycle — building automated test frameworks, performance testing infrastructure, and QA processes that catch regressions before they reach production. From end-to-end browser automation to API contract testing and mobile QA, our practice shifts quality left and accelerates release confidence.",
+        shortDescription:
+            "Automated test frameworks, API contract testing, performance engineering, and CI-integrated QA.",
+        icon: "CheckCircle",
+        benefits: [
+            "Test automation frameworks: Playwright, Cypress, Selenium WebDriver, WebdriverIO",
+            "API testing: REST Assured, Postman/Newman, Pact (contract testing)",
+            "Mobile testing: Appium, Detox (React Native), XCUITest, Espresso",
+            "Performance & load testing: k6, Gatling, JMeter, Locust",
+            "Visual regression testing: Percy, Chromatic, Applitools Eyes",
+            "CI/CD test integration: GitHub Actions, Jenkins, CircleCI parallel test execution",
+            "Accessibility auditing: axe-core, Pa11y, WCAG 2.1/2.2 AA compliance testing",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "QA Strategy & Coverage Mapping",
+                description:
+                    "We audit your existing test coverage, identify critical paths with no automated validation, and define a testing pyramid strategy balancing unit, integration, and E2E test investment.",
+            },
+            {
+                step: 2,
+                title: "Framework Design & Setup",
+                description:
+                    "We scaffold test automation frameworks with page object models, fixtures, and shared utilities, integrated into your CI/CD pipeline with parallel execution and flake detection from day one.",
+            },
+            {
+                step: 3,
+                title: "Test Development & Backfill",
+                description:
+                    "We write automated tests for critical user journeys, API contracts, and regression scenarios — prioritizing coverage for high-risk business flows and areas with a history of production incidents.",
+            },
+            {
+                step: 4,
+                title: "Performance Baseline & Quality Gates",
+                description:
+                    "We establish performance baselines, configure synthetic monitoring, and implement test quality gates in CI so regressions block deployment automatically rather than reaching production.",
+            },
+        ],
+        featured: false,
+    },
+    {
+        id: "9",
+        title: "3D, AR & VR Experiences",
+        slug: "3d-ar-vr",
+        description:
+            "We design and build immersive 3D, augmented reality, and virtual reality experiences for commerce, training, real estate, and entertainment. From web-based 3D product configurators and WebXR experiences to native AR apps and enterprise VR training simulations, we bridge creative vision with production-grade real-time rendering pipelines.",
+        shortDescription:
+            "WebXR, Three.js, Unity, and Unreal Engine experiences for commerce, training, and immersive media.",
+        icon: "Box",
+        benefits: [
+            "Web-based 3D: Three.js, Babylon.js, React Three Fiber, model-viewer, WebGL shaders",
+            "WebXR AR/VR browser-native immersive experiences",
+            "Native AR: ARKit (iOS), ARCore (Android), RealityKit, SceneKit",
+            "Unity development: XR Interaction Toolkit, game mechanics, asset pipeline & profiling",
+            "Unreal Engine: photorealistic visualization, Blueprint & C++ development, Nanite/Lumen",
+            "3D product configurators for ecommerce: real-time material, color & geometry changes",
+            "Asset optimization: Draco/Meshopt compression, KTX2 textures, LOD pipeline, glTF/USDZ",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Experience Design & Technical Scoping",
+                description:
+                    "We define target platforms (web, iOS, Android, headset), interaction models, and performance budgets, then build a technical prototype to validate feasibility and frame-rate targets early.",
+            },
+            {
+                step: 2,
+                title: "Asset Pipeline & Scene Architecture",
+                description:
+                    "We build the 3D asset pipeline — modeling, rigging, texturing, and optimization for target polycount and texture budgets — and architect the scene graph, physics, and interaction systems.",
+            },
+            {
+                step: 3,
+                title: "Development & Integration",
+                description:
+                    "We develop the immersive experience in Three.js/R3F, Unity, or Unreal, integrate with CMS or commerce data sources for dynamic content, and optimize shaders and draw calls to hit frame-rate targets.",
+            },
+            {
+                step: 4,
+                title: "Testing, Optimization & Deployment",
+                description:
+                    "We test across target devices and headsets, profile GPU/CPU performance, apply LOD and occlusion culling optimizations, and deploy via CDN with progressive loading for web-based experiences.",
+            },
+        ],
+        featured: false,
+    },
+    {
+        id: "10",
+        title: "DevOps & Cloud Consulting",
+        slug: "devops-cloud-consulting",
+        description:
+            "We help engineering teams build the cloud infrastructure, delivery pipelines, and operational practices that enable fast, reliable software delivery. From greenfield cloud architecture and Kubernetes platform setup to legacy infrastructure modernization and FinOps programs, our engagements reduce deployment toil, improve system reliability, and bring infrastructure costs under control.",
+        shortDescription:
+            "Cloud architecture, Kubernetes, IaC, CI/CD pipelines, and FinOps across AWS, GCP, and Azure.",
+        icon: "Server",
+        benefits: [
+            "Cloud architecture & migration: AWS, GCP, Azure — Well-Architected Framework reviews",
+            "Infrastructure-as-code: Terraform, Pulumi, AWS CDK, Crossplane",
+            "Kubernetes platform engineering: EKS, GKE, AKS — RBAC, network policies, autoscaling",
+            "CI/CD pipeline design: GitHub Actions, GitLab CI, Tekton, ArgoCD (GitOps)",
+            "Service mesh & networking: Istio, Linkerd, AWS App Mesh",
+            "Secrets management: HashiCorp Vault, AWS Secrets Manager, External Secrets Operator",
+            "FinOps & cost optimization: reserved capacity, rightsizing, Kubecost, CloudHealth",
+            "Observability: Datadog, Grafana + Prometheus + Loki, OpenTelemetry instrumentation",
+        ],
+        process: [
+            {
+                step: 1,
+                title: "Infrastructure & Delivery Audit",
+                description:
+                    "We assess your cloud architecture against the Well-Architected Framework, audit CI/CD pipeline reliability and deployment frequency, and benchmark infrastructure costs against workload profiles.",
+            },
+            {
+                step: 2,
+                title: "Platform Design & IaC",
+                description:
+                    "We design the target infrastructure topology, write Terraform or Pulumi modules for reproducible provisioning, and define environment promotion strategies with appropriate change governance.",
+            },
+            {
+                step: 3,
+                title: "Kubernetes & Pipeline Setup",
+                description:
+                    "We provision and harden Kubernetes clusters, configure GitOps delivery with ArgoCD or Flux, set up service mesh for mTLS and traffic management, and migrate workloads incrementally.",
+            },
+            {
+                step: 4,
+                title: "Observability, FinOps & Runbooks",
+                description:
+                    "We deploy a full observability stack with distributed tracing and alerting, establish cost allocation tagging and optimization cadences, and document operational runbooks for the platform your team inherits.",
+            },
+        ],
+        featured: true,
+    },
 ];
-
 export const caseStudies: CaseStudy[] = [
     {
         id: "1",

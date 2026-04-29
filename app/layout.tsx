@@ -92,12 +92,6 @@ export const metadata: Metadata = {
             "max-snippet": -1,
         },
     },
-    verification: {
-        // Add your verification codes when available
-        // google: "your-google-verification-code",
-        // yandex: "your-yandex-verification-code",
-        // bing: "your-bing-verification-code",
-    },
     icons: {
         icon: [
             { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
@@ -121,6 +115,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <meta
+                    name="google-site-verification"
+                    content="sUZlRiUkIwLR5vU6hayP5g2hO23oe0qsX_dZwNfIlgI"
+                />
+            </head>
             <body>
                 <JsonLd />
                 <ThemeProvider
